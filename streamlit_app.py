@@ -53,7 +53,7 @@ except URLError as e:
 #my_cur.execute("SELECT CURRENT_USER(), CURRENT_ACCOUNT(), CURRENT_REGION()")
 #my_data_row = my_cur.fetchone()
 streamlit.text("Hello from Snowflake:")
-streamlit.text(my_data_row)
+#streamlit.text(my_data_row)
 #my_cur.execute("select * from fruit_load_list")
 #my_data_row = my_cur.fetchall()
 streamlit.header("The fruit list contains")
@@ -68,7 +68,7 @@ if streamlit.butt('Get Fruit Load List'):
     
     
     
-streamlit.dataframe(my_data_row)
+#streamlit.dataframe(my_data_row)
 fruit_choice1 = streamlit.text_input('What fruit would you like information about?')
 #my_cur.execute("insert into PC_RIVERY_DB.PUBLIC.FRUIT_LOAD_LIST values(%s)",fruit_choice1)
 streamlit.write('The user entered ', fruit_choice1)
